@@ -63,7 +63,7 @@ history = model.fit(x_train_s,
                     y_train_s,
                     batch_size = batch_size,
                     epochs = epochs,
-                    validation_split = 0.1)
+                    validation_split = 0.2)
 
 predictions = model.predict(x_test_s)
 score = model.evaluate(x_test_s, y_test_s, verbose =0)
