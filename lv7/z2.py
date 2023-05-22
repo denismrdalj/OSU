@@ -28,7 +28,7 @@ print("Broj boja u slici: " + str(len(img_array)))
 
 distortions = []
 K = range(1, 10)
-for k in K:
+for k in range(1, 10):
     kmeanModel = KMeans(n_clusters=k)
     kmeanModel.fit(img_array)
     distortions.append(kmeanModel.inertia_)
